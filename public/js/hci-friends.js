@@ -10,8 +10,23 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	//$("a.name").click(projectClick);
+	//$("friends.#").click(projectClick);
+
+	$("a.friendsa").click(function (e) {
+	console.log("HELLO");
+    });
 }
 
+function projectClick() {
+
+     
+    e.preventDefault();
+     
+    $(this).text();
+    $(this).text(anagrammedName(name));
+	console.log("HELLO");
+}
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
